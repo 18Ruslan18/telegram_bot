@@ -26,11 +26,6 @@ public class BotConfig {
     public TelegramBot MySuperTelegramBot() {
         DefaultBotOptions options = ApiContext
                 .getInstance(DefaultBotOptions.class);
-
-        options.setProxyHost(proxyHost);
-        options.setProxyPort(proxyPort);
-        options.setProxyType(proxyType);
-
         TelegramBot mySuperTelegramBot = new TelegramBot(options);
         mySuperTelegramBot.setBotUserName(botUserName);
         mySuperTelegramBot.setBotToken(botToken);
